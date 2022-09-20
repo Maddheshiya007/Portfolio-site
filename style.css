@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Source+Sans+Pro:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidebar{
+    background-color: rgb(142, 136, 136);
+    width: 20%;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+.sidebar nav{
+    padding: 20px;
+}
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    /* padding-top: 33px 0; */
+    padding: 30px;
+}
+.sidebar nav li a{
+
+    width: 100%;
+        text-decoration: none;
+}
+.sidebar li:hover{
+    background-color: rgb(243, 227, 227);
+    color: rgb(142, 136, 136);
+}
+.sidebar li a:hover{
+    color: rgb(142, 136, 136);
+}
+.main{
+    /* background-color: yellow;  */
+    width: 80%;
+}
+.container{
+    display: flex;
+    
+}
+.infocontainer{
+    /* background-color: rgb(196, 14, 206);  */
+    height: 50%;
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.hello{
+    font-size: 65px;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.about{
+font-size: 40px;
+}
+.moreabout{
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+        margin-top: 10px;
+
+}
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin: 15px 3px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.devPic img{
+    width: 40vh;
+    height: 100%;
+}
+.contactform{
+    font-family: 'Josefin Sans', sans-serif;
+padding-top: 20px; 
+}
+.contactform h1{
+    text-align: center;
+    padding-top: 60px;
+
+
+}
+.contactform form div{
+    padding: 15px;
+}
+#input#isclient {
+    width: 15px;
+}
+#emailHelp{
+    font-size: 10px;
+
+}
+.container_skill{
+    padding: 30px;
+}
+.ulskill{
+    margin: 15px;
+}
+
+.progress{
+    background-color: antiquewhite;
+}
+
+.active{
+    background-color: blueviolet;
+    text-align: center;
+    
+}
+.progress-bar-info{
+    /* color: red; */
+    background-color: brown;
+    text-align: center;
+}
+.progress-bar-warning{
+    background-color: rgb(44, 130, 206);
+    text-align: center;
+}
+.progress-bar-danger{
+    background-color: aqua;
+    text-align: center;
+}
+.progress-bar-danger2{
+    background-color: rgb(173, 211, 58);
+    text-align: center;
+}
+.progress-bar-danger3{
+    background-color: rgb(122, 174, 9);
+    text-align: center;
+}
+.linkden{
+    width: 100px;
+    height: 100px;
+}
+.gihub{
+    width: 150px;
+    height: 100px;
+}
+.insta{
+    width: 100px;
+    height: 100px;
+}
+.socialmedia{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    background-color:white;
+}
+.main div {
+    padding: 5px;
+}
+
+.main {
+    padding: 50px;
+}
+.devPic img{
+    border-radius: 50%;
+    border:2px solid rgb(205, 205, 199);
+}
