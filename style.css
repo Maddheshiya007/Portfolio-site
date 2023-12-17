@@ -1,21 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
 }
-.container-wrap{
+
+.container-wrap {
     max-width: 1170px;
     margin: 0 auto;
-    
+
 }
-#aside{
+
+#aside {
     height: 100vh;
     padding-top: 3em;
     padding-bottom: 40px;
@@ -26,12 +28,13 @@
     z-index: 1001;
     background-color: rgb(232, 237, 235);
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
 
 
-.author-img{
+.author-img {
     width: 150px;
     height: 150px;
     margin: 0 auto;
@@ -42,41 +45,48 @@
     background-repeat: no-repeat;
     position: relative;
 }
-#auth-name{
+
+#auth-name {
     margin-bottom: 20px;
 }
-.position{
+
+.position {
     margin-bottom: 20px;
 }
-#main-manu{
+
+#main-manu {
     display: block;
     width: 100%;
-    position:relative ;
+    position: relative;
     min-height: 55px;
     margin-bottom: 20px;
 }
-#main-manu ul{
+
+#main-manu ul {
     text-align: center;
     list-style: none;
 }
-#main-manu ul li{
+
+#main-manu ul li {
     margin: 0 0 30px 0;
     padding: 0;
     letter-spacing: 1px;
 }
 
-.footer{
+.footer {
     padding: 5px;
 }
-#main-sec{
+
+#main-sec {
     position: relative;
     float: right;
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
     height: 100vh;
     overflow-y: scroll;
     width: calc(1170px - 300px);
 }
-.hero-dp{
+
+.hero-dp {
     width: 100%;
     height: 100vh;
     background-image: url(img_bg_2.jpg);
@@ -87,28 +97,29 @@
     margin-bottom: 10%;
 }
 
-.hero-dp h1{
+.hero-dp h1 {
     color: #000000;
     font-size: 70px;
     position: absolute;
     top: 50%;
     left: 20%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     letter-spacing: 2px;
 }
-.hero-dp p{
+
+.hero-dp p {
     color: #000000;
     font-size: 20px;
     position: absolute;
     top: 70%;
     left: 5%;
-    
+
     letter-spacing: 2px;
 }
 
-button{
+.buttondsn {
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 5%;
     letter-spacing: 2px;
     padding: 10px 20px;
@@ -121,46 +132,64 @@ button{
     border-radius: 5px;
 }
 
-button:hover{
+button:hover {
     background-color: #ffffff;
     color: #000000;
     transition: 0.5s;
     border: 1px solid #000000;
 }
 
-.about, .services, .contact, .footer{
+.about,
+.services,
+.skills,
+.education,
+.contact {
     padding: 5%;
-    margin-bottom: 10%;
+    /* margin-bottom: 5px; */
     position: relative;
+    background-color: rgb(187, 216, 206);
+    background-color: white;
 }
 
 
-.about h2, .services h2, .contact h2, .footer h2{
+.about h2,
+.services h2,
+.skills h2,
+.education h2,
+.contact h2 {
     font-size: 20px;
     margin-bottom: 5%;
     text-align: center;
     text-transform: uppercase;
 }
-.about h3, .services h3, .contact h3, .footer h3{
+
+.about h3,
+.services h3 {
     font-size: 25px;
     margin-bottom: 5%;
     text-transform: uppercase;
 }
-.about p, .services p, .contact p, .footer p{
+
+.about p,
+.services p {
     font-size: 20px;
     margin-bottom: 5%;
-    
+
 }
 
-.about-box{
+.about-box,
+.service-box,
+.contact-box {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    /* margin-bottom: 10%; */
+
 }
 
-.abtboxes{
+.abtboxes {
     margin-bottom: 10%;
     height: 100px;
     width: 100px;
@@ -172,4 +201,133 @@ button:hover{
     text-align: center;
 }
 
+.abtboxes:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    border: 1px solid #000000
+}
 
+.service-boxes {
+    margin-bottom: 5%;
+    height: 200px;
+    width: 200px;
+    background-color: #c6b0b0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+}
+
+.service-boxes:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    border: 1px solid #000000
+}
+
+.skill-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.skill-box-1 {
+    width: 45%;
+
+}
+
+.skill-box-2 {
+    width: 45%;
+}
+
+.skill-boxes {
+    width: 100%;
+}
+
+.skill-bar {
+    height: 10px;
+    width: 100%;
+    background-color: rgb(209, 206, 206);
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+
+.skill-bar-fill {
+    height: 10px;
+    /* width: 80%; */
+    background-color: #e8a3a3;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.edu-boxes {
+    background-color: #b0c0c6;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+
+.contact-boxes {
+    margin: 5px;
+    width: 100%;
+    background-color: #c6b0b0;
+
+}
+
+.contact-boxes input {
+    width: 100%;
+    height: 100%;
+    /* border: none; */
+    /* outline: none; */
+    background-color: #ffffff;
+    font-size: 20px;
+    padding-left: 10px;
+
+}
+
+#msg {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#sendmsg {
+    width: 100%;
+    /* padding: 10px; */
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    border-radius: 20px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7e9faa;
+    border-radius: 10px;
+}
