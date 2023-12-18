@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -14,16 +15,32 @@
 .container-wrap {
     max-width: 1170px;
     margin: 0 auto;
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 
+}
+
+@media screen and (max-width: 1170px) {
+    .container-wrap {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #aside {
+        display: none;
+    }
 }
 
 #aside {
     height: 100vh;
     padding-top: 3em;
     padding-bottom: 40px;
-    float: left;
+    /* float: left; */
     width: 300px;
-    position: fixed;
+    /* position: fixed; */
     overflow-y: scroll;
     z-index: 1001;
     background-color: rgb(232, 237, 235);
@@ -78,9 +95,6 @@
 }
 
 #main-sec {
-    position: relative;
-    float: right;
-    /* background-color: rosybrown; */
     height: 100vh;
     overflow-y: scroll;
     width: calc(1170px - 300px);
@@ -95,32 +109,28 @@
     background-repeat: no-repeat;
     position: relative;
     margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
 }
 
 .hero-dp h1 {
     color: #000000;
     font-size: 70px;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    margin: 20px 0 20px 20px;
     letter-spacing: 2px;
 }
 
 .hero-dp p {
     color: #000000;
     font-size: 20px;
-    position: absolute;
-    top: 70%;
-    left: 5%;
-
+    margin: 20px 0 20px 20px;
     letter-spacing: 2px;
 }
 
 .buttondsn {
-    position: absolute;
-    top: 90%;
-    left: 5%;
+    margin: 20px 0 20px 20px;
     letter-spacing: 2px;
     padding: 10px 20px;
     border: none;
@@ -145,9 +155,7 @@ button:hover {
 .education,
 .contact {
     padding: 5%;
-    /* margin-bottom: 5px; */
     position: relative;
-    background-color: rgb(187, 216, 206);
     background-color: white;
 }
 
@@ -157,10 +165,12 @@ button:hover {
 .skills h2,
 .education h2,
 .contact h2 {
-    font-size: 20px;
+    font-size: 70px;
     margin-bottom: 5%;
-    text-align: center;
+    color: #c2c0c0;
     text-transform: uppercase;
+    user-select: none;
+    text-align: center;
 }
 
 .about h3,
@@ -185,7 +195,6 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    /* margin-bottom: 10%; */
 
 }
 
