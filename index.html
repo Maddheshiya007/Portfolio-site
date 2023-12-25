@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta keywords="portfolio,">
     <title>Portfolio-site</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2f5d5159be.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-+dLXN0aS6Tq6qz4+oXnX3n6n6+e1z0n2w1wqy+gkXjz+gJwvF+g1d1d1d1d1d1d1d1" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -37,15 +39,33 @@
                 <nav id="main-manu" role="navigation" class="navbar">
                     <div id="navbar" class="collapse" aria-expanded="false">
                         <ul>
-                            <li><a href="#">HOME </a></li>
-                            <li><a href="#About">ABOUT</a></li>
-                            <li><a href="#Services">SERVICES</a></li>
-                            <li><a href="#Skills">SKILLS</a></li>
-                            <li><a href="#Education">EDUCATION</a></li>
-                            <li><a href="#Experience">EXPERIENCE</a></li>
-                            <li><a href="#Work">WORK</a></li>
-                            <li><a href="#Blog">BLOG</a></li>
-                            <li><a href="#Contact">CONTACT</a></li>
+                            <a href="#hiro">
+                                <li>HOME</li>
+                            </a>
+                            <a href="#About">
+                                <li>ABOUT</li>
+                            </a>
+                            <a href="#Services">
+                                <li>SERVICES</li>
+                            </a>
+                            <a href="#Skills">
+                                <li>SKILLS</li>
+                            </a>
+                            <a href="#Education">
+                                <li>EDUCATION</li>
+                            </a>
+                            <a href="#Experience">
+                                <li>EXPERIENCE</li>
+                            </a>
+                            <a href="#Work">
+                                <li>WORK</li>
+                            </a>
+                            <a href="#Blog">
+                                <li>BLOG</li>
+                            </a>
+                            <a href="#Contact">
+                                <li>CONTACT</li>
+                            </a>
                         </ul>
 
                     </div>
@@ -58,10 +78,12 @@
             </aside>
             <!-- From here started 2nd part. -->
             <div id="main-sec">
-                <div class="hero-dp">
+                <div class="hero-dp" id="hiro">
                     <h1>Hi <br> I'm <br>Chandan</h1>
                     <p>This website is made by <i class="fa-solid fa-heart" style="color: #fc0303;"></i></p>
-                    <a href="chandan-resume.pdf" download><button class="buttondsn">Download Resume</button></a>
+                    <a class="resumebtn buttondsn" href="chandan-resume.pdf" download>
+                        <div> Download Resume </div>
+                    </a>
                 </div>
 
                 <!-- About section is here -->
@@ -79,7 +101,7 @@
                         <div class="abtboxes">Software</div>
                         <div class="abtboxes">Appliaction</div>
                     </div>
-                    <button class="buttondsn">Hire Me</button>
+                    <a href="#Contact"><button class="buttondsn">Hire Me</button></a>
                 </div>
 
                 <!-- Services section is here -->
