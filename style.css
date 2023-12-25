@@ -44,7 +44,7 @@
     /* position: fixed; */
     overflow-y: scroll;
     z-index: 1001;
-    background-color: rgb(232, 237, 235);
+    background-color:#dfe9f8;
 }
 
 .text-center {
@@ -93,13 +93,16 @@
     width: 100%;
     text-align: center;
     text-decoration: none;
-    height: 35px;
+    height:40px;
     letter-spacing: 1px;
 }
 
 #main-manu ul li:hover {
     font-weight: 500;
-    border: 2px solid #5676ec;
+    border: 2px solid #5ec6f7;
+    background-color:#e8edf1;
+    box-shadow: #bab6b687 0px 0px 20px 7px;
+    border: none;
 }
 
 #main-manu ul a {
@@ -117,6 +120,7 @@
     height: 100vh;
     overflow-y: scroll;
     width: calc(1170px - 300px);
+    /* background-color: 000000; */
 }
 
 .hero-dp {
@@ -184,7 +188,8 @@
 .contact {
     padding: 5%;
     position: relative;
-    background-color: white;
+    /* background-color: white; */
+    /* background-color: #000000; */
 }
 
 
@@ -230,7 +235,7 @@
     margin-bottom: 10%;
     height: 100px;
     width: 100px;
-    background-color: #d5b6b6;
+    /* background-color: #d5b6b6; */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -249,19 +254,33 @@
     margin-bottom: 5%;
     height: 200px;
     width: 200px;
-    background-color: #c6b0b0;
+    color: #ffffff;
+    background-color: #F4DFC8;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #000000;
+    /* border: 2px solid #000000; */
+    border-radius: 50%;
+}
+
+.box-color1 {
+    background-color: #e98e2c;
+}
+.box-color2 {
+    background-color: #9c7bfa;
+}
+.box-color3 {
+    background-color: #d153d6;
 }
 
 .service-boxes:hover {
-    background-color: black;
-    color: white;
+    background-color: rgba(255, 253, 253, 0.796);
+    color: rgb(4, 4, 4);
     transition: 0.5s;
-    border: 1px solid #000000
+    /* border: 1px solid #000000 */
+    box-shadow: #bab6b687 0px 0px 20px 7px;
+    border: none;
 }
 
 .skill-box {
